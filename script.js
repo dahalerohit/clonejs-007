@@ -8,20 +8,29 @@ let arr = [
 
 function PrintDeveloperbyMap() {
   //Write your code here , just console.log
+  arr.filter(person => person.profession === 'developer').map(person => console.log(person));
 }
 
 function PrintDeveloperbyForEach() {
   //Write your code here , just console.log
+  arr.filter(person => person.profession === 'developer').forEach(person => console.log(person));
 }
 
 function addData() {
   //Write your code here, just console.log
+   const newPerson = { id: 4, name: "alice", age: "22", profession: "designer" };
+  arr.push(newPerson);  // Add the new person to the array
+  console.log(arr);
 }
 
 function removeAdmin() {
   //Write your code here, just console.log
+  arr = arr.filter(person => person.profession !== 'admin');  // Filter out 'admin'
+  console.log(arr);
 }
 
 function concatenateArray() {
   //Write your code here, just console.log
+  console.log(arr);
+  
 }
